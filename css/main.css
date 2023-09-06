@@ -46,3 +46,91 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+body {
+  /* Flex-box */
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+  /* Visual css */
+  padding: 15px;
+}
+
+.section {
+  /* FLex-box */
+  display: flex;
+  /* Visual css*/
+  background-color: var(--beige);
+  color: var(--black);
+  padding: 15px 0;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 75px;
+}
+
+.box {
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  width: 100px;
+}
+
+.section-1 {
+  flex-flow: row nowrap;
+}
+
+.section-1 .box {
+  width: 25%;
+}
+
+.section-2 {
+  flex-flow: row wrap;
+}
+
+.section-2 .box {
+  width: 50%;
+}
+
+.section-3 {
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section-4 {
+  /* Flex-box */
+  flex-flow: row wrap;
+  gap: 30px;
+  /* Visual css */
+  padding: 15px 30px;
+}
+
+.section-4 .box {
+  width: calc(50% - 15px);
+}
+
+.section-5 {
+  /* Flex-box */
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+  /* Visual css */
+  padding: 15px;
+}
+
+.section-5 .box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-5 .box:nth-child(2) {
+  height: 150px;
+}
+
+.section-5 .box:nth-child(4) {
+  height: 200px;
+}
